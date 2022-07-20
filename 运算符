@@ -1,0 +1,62 @@
+#运算符
+print(1+1)  #加法
+print(2-1)  #减法
+print(2*4)  #乘法
+print(1/2)  #除法
+print(11/2) #除法
+print(11//2)#整除（取整数部分）
+print(11%2) #取余
+print(2**2) #2的2次方
+print(2**3) #2的3次方
+
+#一正一负的运算  （向下取整）
+print(9//-4) #-3
+print(-9//4) #-3
+
+print(9%-4) #-3 公式：余数=被除数-除数*商
+print(-9%4) #3
+
+
+#赋值运算符  右->左
+#支持链式赋值 a=b=c=2
+#支持参数赋值 +=、-=、*=、/=、//=、%=
+#支持系列解包赋值  a,b,c=20,30,40
+
+#交换
+a=20
+b=30
+a,b=b,a
+print(a,b)
+
+
+#比较运算符  结果是bool类型 变量由标识，类型，值，三步法组成
+#比较的是变量的值，比较对象的标识使用is/is not
+a,b=20,30
+print('a>b吗？',a>b) #False
+
+a=10
+b=10
+print(a==b)
+print(a is b)
+
+#布尔运算符  and(与)/or（或）/not(非)/in（在里面）/not in(不在里面)
+a,b=1,2
+print(a==1 and b==2)  #True   True and True-->True
+print(a==1 or b<2)   #True  True or False-->True
+f=True
+f2=False
+print(not f2)#True (取反)
+
+s='helloworld'
+print('w'in s)#True
+print('k'in s)#False
+
+#位运算  &(按位与) |（按位或） <<(左移 高位溢出低位补0，移1位相当于*2)
+                        #>>(左移 高位补0低位截断，移1位相当于/2)
+print(4&8)
+print(4|8)
+print(7>>1)
+print(9<<1)
+
+#优先级  （高-->低）
+#算术运算符   位运算   比较运算符  布尔运算符   赋值运算符
